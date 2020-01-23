@@ -1,1 +1,2 @@
-For new members, go over the code and understand the basic structure. Install the Android studio.
+For new members, go over the code and understand the basic structure. Install the Android studio and set up emulator.
+brainstorm and collect new features and improvements.
