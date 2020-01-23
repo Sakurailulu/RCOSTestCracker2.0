@@ -1,0 +1,1 @@
+For new members, go over the code and understand the basic structure. Install the Android studio.
