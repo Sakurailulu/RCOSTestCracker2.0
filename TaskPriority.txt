@@ -5,3 +5,5 @@ brainstorm and collect new features and improvements.
 Goal/Plan:
 1. For file storage, move from MySQL to firebase.
 2. Generate apk file for release.
+3. For new members, go over the code and understand the basic structure. Install the Android studio.
+4. Develop a picture recognition feature to extract course information from jpg and pdf files.
