@@ -14,8 +14,13 @@ Upload, download, edit, and comment on backtests
 Database to store user information
 
 Contributor:
-Yiran Zheng
-Zhou Lu
+Yiran Zheng(zhengy4@rpi.edu)
+Zhou Lu (luz6@rpi.edu)
+Yutong Gao （gaoy10@rpi.edu）
+Yashu Ren(reny4@rpi.edu)
+Damin Xu(xud5@rpi.edu)
+
+
 
 
 
@@ -31,15 +36,22 @@ Here is the GOAL/PLAN for RCOSTestCracker 2.0:
 6.
 7.
 8.
-Milestones:
-By the end of Feb
+
+Milstone:
+Feature Milestones by the end of February :
+Move file storage from MySQL to firebase
+Build up registration verify system which means for first time users, the system will ask rpi.edu email to verify
+
+Feature Milestones by the end of March :
+Add rating system to rate the uploaded file
+Allow certain users to log in as administrators
+Develop a picture recognition feature to extract course information from jpg and pdf files.
+
+Feature Milestones by end of Semester:
+Generate apk file for release
+students can challenge the wrong materials
+administer can remove the wrong materials which have a certain percentage challenged
+fix bugs from previous milestones
 
 
-
-By the end of March
-
-
-
-
-By the end of semester
 
