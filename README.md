@@ -6,18 +6,30 @@ Test Cracker is an Android application for RPI students to improve efficiency an
 
 Small group meeting room sage 2112
 
+
 Key Feature:
+
 Runs on any device with Android operating systems
+
 Open-source and completely free to use
+
 Mark the test dates and assignment deadlines and have a pop-up notification calendar reminder
+
 Upload, download, edit, and comment on backtests
+
 Database to store user information
 
+
 Contributor:
+
 Yiran Zheng(zhengy4@rpi.edu)
+
 Zhou Lu (luz6@rpi.edu)
+
 Yutong Gao （gaoy10@rpi.edu）
+
 Yashu Ren(reny4@rpi.edu)
+
 Damin Xu(xud5@rpi.edu)
 
 
@@ -28,29 +40,51 @@ we gonna have a project manager.
 
 
 Here is the GOAL/PLAN for RCOSTestCracker 2.0:
+
 #1.For file storage, move from MySQL to firebase.
+
 #2.Generate apk file for release.
+
 #3.For new members, go over the code and understand the basic structure. Install the Android studio.
+
 #4.Develop a picture recognition feature to extract course information from jpg and pdf files.
+
 #5.Develop the server-side(back-end) using python, so that the server will be easier for maintenance.
+
 #6.
+
 #7.
+
 #8.
 
+
 Milstone:
+
+
 Feature Milestones by the end of February :
+
 Move file storage from MySQL to firebase
+
 Build up registration verify system which means for first time users, the system will ask rpi.edu email to verify
 
+
 Feature Milestones by the end of March :
+
 Add rating system to rate the uploaded file
+
 Allow certain users to log in as administrators
+
 Develop a picture recognition feature to extract course information from jpg and pdf files.
 
+
 Feature Milestones by end of Semester:
+
 Generate apk file for release
+
 students can challenge the wrong materials
+
 administer can remove the wrong materials which have a certain percentage challenged
+
 fix bugs from previous milestones
 
 
