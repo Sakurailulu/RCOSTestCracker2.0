@@ -28,14 +28,14 @@ we gonna have a project manager.
 
 
 Here is the GOAL/PLAN for RCOSTestCracker 2.0:
-1.For file storage, move from MySQL to firebase.
-2.Generate apk file for release.
-3.
-4.
-5.
-6.
-7.
-8.
+#1.For file storage, move from MySQL to firebase.
+#2.Generate apk file for release.
+#3.For new members, go over the code and understand the basic structure. Install the Android studio.
+#4.Develop a picture recognition feature to extract course information from jpg and pdf files.
+#5.Develop the server-side(back-end) using python, so that the server will be easier for maintenance.
+#6.
+#7.
+#8.
 
 Milstone:
 Feature Milestones by the end of February :
