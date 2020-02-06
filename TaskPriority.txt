@@ -17,6 +17,6 @@ Goal/Plan:
 
 6.decided who will be project manager and lead the team, connect front-end team members and back-end team members.
 
-7.
+7.try to fix the bug left from previous version(web crawler can not work and read in to automatically add course to our application)
 
 8.
