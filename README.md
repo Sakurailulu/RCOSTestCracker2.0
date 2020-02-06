@@ -7,6 +7,8 @@ Test Cracker is an Android application for RPI students to improve efficiency an
 Small group meeting room sage 2112
 
 
+PM:Yashu Ren
+
 Key Feature:
 
 Runs on any device with Android operating systems
