@@ -53,11 +53,11 @@ Here is the GOAL/PLAN for RCOSTestCracker 2.0:
 
 #5.Develop the server-side(back-end) using python, so that the server will be easier for maintenance.
 
-#6.
+#6.Move the whole server to the cloud.
 
-#7.
+#7.Design a better front-end UI(may need more time to learn java-script).
 
-#8.
+#8.Write documentation for later maintenance
 
 
 Milstone:

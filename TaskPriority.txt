@@ -19,4 +19,4 @@ Goal/Plan:
 
 7.try to fix the bug left from previous version(web crawler can not work and read in to automatically add course to our application)
 
-8.
+8.start learning java-script for UI design
