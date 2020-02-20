@@ -1,2 +1,4 @@
 Link to RPI APO website
 http://apo.union.rpi.edu/backtests/#365
+Only has catalog to the instock backtests in term and year. 
+Cannot view the file online. 
