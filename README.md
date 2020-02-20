@@ -36,8 +36,6 @@ Damin Xu(xud5@rpi.edu)
 
 
 
-
-
 we gonna have a project manager. 
 
 
