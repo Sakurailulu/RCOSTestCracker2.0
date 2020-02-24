@@ -1,10 +1,10 @@
 //https://stackabuse.com/tesseract-simple-java-optical-character-recognition/
 
-<dependency> 
- <groupId>net.sourceforge.tess4j</groupId> 
- <artifactId>tess4j</artifactId> 
- <version>3.2.1</version> 
-</dependency>
+// <dependency> 
+//  <groupId>net.sourceforge.tess4j</groupId> 
+//  <artifactId>tess4j</artifactId> 
+//  <version>3.2.1</version> 
+// </dependency>
 
 
 package com.amudabadmus.awfa;
@@ -30,3 +30,5 @@ public class App {
       System.out.println(app.getImgText("C:\\Users\\User\\Pictures\\img.png"));
    }
 }
+
+//Version 2: https://www.geeksforgeeks.org/tesseract-ocr-with-java-with-examples/
