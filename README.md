@@ -36,8 +36,6 @@ Damin Xu(xud5@rpi.edu)
 
 
 
-
-
 we gonna have a project manager. 
 
 
@@ -90,4 +88,9 @@ administer can remove the wrong materials which have a certain percentage challe
 fix bugs from previous milestones
 
 
+
+Current planning:
+PM will go the APO office to see if we can collaborate scan and upload all the backtest that APO office currently have. We can search from APO office on the website to see that there are plenty storage of backtest from different department that apo office collected for years. 
+
+Every semester, we will run the web crawler to get the courses provided in current system and output it as a json file. We implement a java function to read in the json file and let the application auto update and gengerate the courses folder every semester. However, everytime we try to run the application on the emulator, the course list is empty. This feature still need time to implement and debugging.
 
