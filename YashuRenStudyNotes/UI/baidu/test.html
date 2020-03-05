@@ -1,33 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-<script type="text/javascript">
-
-function validate_required(field,alerttxt)
-{
-with (field)
-  {
-  if (value==null||value=="")
-    {alert(alerttxt);return false}
-  else {return true}
-  }
-}
-
-function validate_form(thisform)
-{
-with (thisform)
-  {
-  if (validate_required(email,"Email must be filled out!")==false)
-    {email.focus();return false}
-  }
-}
-</script>
+	<meta charset="UTF-8">
+	<link rel="Shortcut Icon" href="img/tab_icon.ico" />
+	<title>百度一下，你就知道</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-
 <body>
-<form action="submitpage.html" onsubmit="return validate_form(this)" method="post">
-Email: <input type="text" name="email" size="30">
-<input type="submit" value="Submit"> 
-</form>
-</body>
+	<div class="conten" style="height: 700px">
 
+		<div id="class1" style="height:10%">
+			<nav class="main">
+				<a class="nav1" href="http://news.baidu.com/">新闻</a>
+				<a class="nav1" href="http://www.hao123.com/">hao123</a>
+				<a class="nav1" href="http://map.baidu.com/">地图</a>
+				<a class="nav1" href="http://v.baidu.com/">视频</a>
+				<a class="nav1" href="http://tieba.baidu.com/">贴吧</a>
+				<a class="nav1" href="http://xueshu.baidu.com/">学术</a>
+			</nav>
+		</div>
+
+		<div id="class2" style="height:35%">
+			<div class = "logo">
+				<a class = "logo" href="https://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs" target="view_window"><img class="logo" src = "img/bd_logo1.png" width="280" height="133.84"></a>
+			</div>
+			
+
+			<div class="search-input">
+				<input type="text" name="search">
+				<button type="button">百度一下</button>
+
+			</div>
+		</div>
+
+		<div id="class3" style="height:30%"></div>
+
+	</div>
+</body>
 </html>
