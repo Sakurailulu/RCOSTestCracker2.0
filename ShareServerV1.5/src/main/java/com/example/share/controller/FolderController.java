@@ -78,11 +78,11 @@ public class FolderController {
         User user = userList.get(0);
 
         if (file.isEmpty()) {
-            return "文件为空";
+            return "Empty file";
         }
-        // 获取文件名
+        // get file name
         String fileName = file.getOriginalFilename();
-        // 文件上传路径
+        // uploading directory
         String filePath = "F:\\ZFILE\\";
         String suffix = "";
         try {
@@ -92,7 +92,7 @@ public class FolderController {
         }
         String fullPath = filePath + UUID.randomUUID() + suffix;
         File dest = new File(fullPath);
-        // 检测是否存在目录
+        // check whether exist
         if (!dest.getParentFile().exists()) {
             dest.getParentFile().mkdirs();
         }
@@ -126,10 +126,10 @@ public class FolderController {
     public Object download(HttpServletRequest request, HttpServletResponse response) {
         String path = request.getHeader("path");
         if (path != null) {
-            //设置文件路径
+            //set file directory
             File file = new File(path);
             if (file.exists()) {
-                response.setContentType("application/force-download");// 设置强制下载不打开
+                response.setContentType("application/force-download");
                 byte[] buffer = new byte[1024];
                 FileInputStream fis = null;
                 BufferedInputStream bis = null;
