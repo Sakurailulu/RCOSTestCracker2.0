@@ -20,3 +20,13 @@ Goal/Plan:
 7.try to fix the bug left from previous version(web crawler can not work and read in to automatically add course to our application)
 
 8.start learning java-script for UI design
+
+9.contact APO office information listed below
+Postal Mail
+Alpha Phi Omega
+RPI Union Room 3420
+Troy, NY 12180
+Phone
+(518) 276-6516
+General E-Mail
+apo@union.lists.rpi.edu
