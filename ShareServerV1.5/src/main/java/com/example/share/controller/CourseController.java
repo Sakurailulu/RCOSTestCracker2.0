@@ -38,7 +38,7 @@ public class CourseController {
     }
 
     @RequestMapping("/selectById")
-    public Object selectById(int id) {  
+    public Object selectById(int id) {
         return new ResponseBean(200, "", courseService.selectById(id));
     }
 

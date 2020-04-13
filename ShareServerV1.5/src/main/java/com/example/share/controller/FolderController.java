@@ -3,13 +3,13 @@ package com.example.share.controller;
 import com.example.share.entity.Course;
 import com.example.share.entity.Folder;
 import com.example.share.entity.User;
-import com.example.share.service.FolderService;
-import com.example.share.service.UserService;
+import com.example.share.service.*;
 import com.example.share.unit.pagehelper.PageBean;
 import com.example.share.util.ResponseBean;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -30,6 +30,21 @@ public class FolderController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private OpinionService opinionService;
+
+    @Autowired
+    private CourseService courseService;
+
+    @Autowired
+    private TopicService topicService;
+
+    @Autowired
+    private CommentService commentService;
+
+    @Value("${file.path}")
+    private String path;
 
     @RequestMapping("/insert")
     public Object insert(Folder folder) {
@@ -78,12 +93,10 @@ public class FolderController {
         User user = userList.get(0);
 
         if (file.isEmpty()) {
-            return "Empty file";
+            return "The file is empty";
         }
-        // get file name
         String fileName = file.getOriginalFilename();
-        // uploading directory
-        String filePath = "F:\\ZFILE\\";
+        String filePath = path;
         String suffix = "";
         try {
             suffix = "." + fileName.substring(fileName.lastIndexOf(".") + 1);
@@ -92,7 +105,6 @@ public class FolderController {
         }
         String fullPath = filePath + UUID.randomUUID() + suffix;
         File dest = new File(fullPath);
-        // check whether exist
         if (!dest.getParentFile().exists()) {
             dest.getParentFile().mkdirs();
         }
@@ -126,7 +138,6 @@ public class FolderController {
     public Object download(HttpServletRequest request, HttpServletResponse response) {
         String path = request.getHeader("path");
         if (path != null) {
-            //set file directory
             File file = new File(path);
             if (file.exists()) {
                 response.setContentType("application/force-download");
@@ -171,4 +182,26 @@ public class FolderController {
         return new ResponseBean(200, "", folderService.selectList("where course_id='" + courseId + "'"));
     }
 
+    @RequestMapping("/deleteAll")
+    public Object deleteAll(Integer courseId) {
+        opinionService.deleteAll();
+        folderService.deleteAll();
+        courseService.deleteAll();
+        commentService.deleteAll();
+        topicService.deleteAll();
+        userService.deleteAll();
+
+        delTempChild(new File(path));
+        return new ResponseBean(200, "", 1);
+    }
+
+    public void delTempChild(File file) {
+        if (file.isDirectory()) {
+            String[] children = file.list();
+            for (int i = 0; i < children.length; i++) {
+                delTempChild(new File(file, children[i]));
+            }
+        }
+        file.delete();
+    }
 }

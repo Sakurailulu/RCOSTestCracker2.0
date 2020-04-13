@@ -53,3 +53,25 @@ CREATE TABLE IF NOT EXISTS `opinion`
   `state` INT NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `topic`
+(
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(50),
+  `content` VARCHAR(255),
+  `createTime` DATETIME,
+  `user_id` INT(11),
+  `state` INT NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `comment`
+(
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `content` VARCHAR(255),
+  `createTime` DATETIME,
+  `topic_id` INT(11),
+  `user_id` INT(11),
+  `state` INT NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
