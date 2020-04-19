@@ -38,10 +38,6 @@
 
         <activity android:name=".activity.RemainActivity" />
 
-        <activity android:name=".activity.TopicAddActivity" />
-
-        <activity android:name=".activity.TopicActivity" />
-
     </application>
 
 </manifest>
