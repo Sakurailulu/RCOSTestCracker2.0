@@ -10,7 +10,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 
+import androidx.core.app.NotificationCompat;
+import androidx.fragment.app.Fragment;
+
 import com.example.share.R;
+import com.example.share.fragment.ForumFragment;
 import com.example.share.fragment.HomeFragment;
 import com.example.share.fragment.SetFragment;
 
@@ -21,12 +25,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import androidx.core.app.NotificationCompat;
-import androidx.fragment.app.Fragment;
-
 public class MainActivity extends BaseActivity {
 
     private Fragment homeFragment;
+    private Fragment forumFragment;
     private Fragment setFragment;
     private SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
@@ -40,6 +42,7 @@ public class MainActivity extends BaseActivity {
 
     private void init() {
         homeFragment = new HomeFragment();
+        forumFragment = new ForumFragment();
         setFragment = new SetFragment();
 
         RadioGroup rgMain = findViewById(R.id.rgMain);
@@ -49,6 +52,10 @@ public class MainActivity extends BaseActivity {
                 switch (checkedId) {
                     case R.id.rbHome: {
                         getSupportFragmentManager().beginTransaction().replace(R.id.flMain, homeFragment).commit();
+                        break;
+                    }
+                    case R.id.rbForum: {
+                        getSupportFragmentManager().beginTransaction().replace(R.id.flMain, forumFragment).commit();
                         break;
                     }
                     case R.id.rbSet: {
@@ -94,10 +101,8 @@ public class MainActivity extends BaseActivity {
         requestPermission();
     }
 
-
-    //动态获取定位所需权限
     private void requestPermission() {
-        if (Build.VERSION.SDK_INT >= 23 ) {
+        if (Build.VERSION.SDK_INT >= 23) {
 
             List<String> permissionsList = new ArrayList<>();
 
